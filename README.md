@@ -8,7 +8,7 @@ Trying to build a nice setting of my vim editor.<br>
 <td> Author:</td><td>Dylandy Chang</td>
 </tr>
 <tr>
-<td> Build time:</td><td>2013-09-19</td>
+<td> Build time:</td><td>2013-09-29</td>
 <tr>
 <td> Blog</td><td> <a href='http://dylandychat.blogspot.com'> 迪蘭帝的聊天室</a> </td>
 </tr>
