@@ -5,20 +5,20 @@ Trying to build a nice setting of my vim editor.<br>
 <br>
 <table>
 <tr>
-<td>#Author:</td><td>Dylandy Chang</td>
+<td> Author:</td><td>Dylandy Chang</td>
 </tr>
 <tr>
-<td>#Build time:</td><td>2013-09-19</td>
+<td> Build time:</td><td>2013-09-19</td>
 <tr>
-<td>#Blog</td><td>[迪蘭帝的聊天室](http://dylandychat.blogspot.com)</td>
+<td> Blog</td><td> <a href='http://dylandychat.blogspot.com'> 迪蘭帝的聊天室</a> </td>
 </tr>
 </table>
 
 ##Require
 ---
- 1.Git<br>
- 2.網際網路<br>
- 3.VIM<br>
+ 1. Git<br>
+ 2. 網際網路<br>
+ 3. VIM<br>
 
 ##Install
 ---
