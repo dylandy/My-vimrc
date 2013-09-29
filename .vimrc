@@ -18,29 +18,21 @@ Bundle 'gmarik/vundle'
  
 "vundel管理的插件，有三種
 " My Bundles here:
-"
 "github 上的 plugin
-" original repos on github
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
+
  
 Bundle 'othree/html5.vim'
  
 "第二種為普通的script plugin
 " vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
  
 "第三種為非github上的git repository
 " non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
+
  
 filetype plugin indent on " required!
  
-"使用说明
+"使用說明
 " Brief help
 " :BundleList - list configured bundles
 " :BundleInstall(!) - install(update) bundles
