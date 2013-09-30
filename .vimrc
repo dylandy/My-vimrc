@@ -1,3 +1,5 @@
+set term=ansi
+syntax on
 set nu
 set tabstop=2
 set shiftwidth=1

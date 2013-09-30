@@ -14,6 +14,16 @@ Trying to build a nice setting of my vim editor.<br>
 </tr>
 </table>
 
+##格式設定
+---
+ 1. 語法高亮
+ 2. 換行自動縮排
+ 3. 將 tab 轉成空格
+ 4. tab 距離為 2 個空格
+ 5. 保留指令紀錄最多 100 條
+ 6. 顯示目前游標所在行線
+
+
 ##Require
 ---
  1. Git<br>
@@ -29,6 +39,9 @@ Trying to build a nice setting of my vim editor.<br>
 ---
  1. vundle 外掛插件管理工具<br>
  2. html5.vim 前端網頁設計，讓 vim 支援 html5 語法<br>
+ 3. Better-CSS-Syntax-for-Vim ，前端網頁工具，使 vim 可以對 CSS3 語法進行表示<br>
+
+
 
 
 
