@@ -1,4 +1,4 @@
-set term=ansi
+set term=xterm
 syntax on
 set nu
 set tabstop=2
