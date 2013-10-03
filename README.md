@@ -40,7 +40,7 @@ Trying to build a nice setting of my vim editor.<br>
  1. vundle 外掛插件管理工具<br>
  2. html5.vim 前端網頁設計，讓 vim 支援 html5 語法<br>
  3. Better-CSS-Syntax-for-Vim ，前端網頁工具，使 vim 可以對 CSS3 語法進行表示<br>
-
+ 4. Power-line ，讓 vim 的狀態列更漂亮的工具。<br>
 
 
 
