@@ -8,6 +8,10 @@ set cursorline
 set history=100
 set expandtab
 set nocompatible " be iMproved
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
 filetype off " required!
  
 set rtp+=~/.vim/bundle/vundle/
@@ -17,12 +21,11 @@ call vundle#rc()
 " required!
 "使用vundle插件管理器管理自身
 Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
  
 "vundel管理的插件，有三種
 " My Bundles here:
 "github 上的 plugin
-
- 
 Bundle 'othree/html5.vim'
  
 "第二種為普通的script plugin
