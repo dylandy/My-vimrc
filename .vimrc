@@ -11,9 +11,11 @@ set nocompatible " be iMproved
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+set noshowmode
 
 filetype off " required!
- 
+let g:Powerline_symbols = 'fancy'
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
  
@@ -22,7 +24,7 @@ call vundle#rc()
 "使用vundle插件管理器管理自身
 Bundle 'gmarik/vundle'
 Bundle 'Lokaltog/vim-powerline'
- 
+Bundle 'Lokaltog/powerline-fonts' 
 "vundel管理的插件，有三種
 " My Bundles here:
 "github 上的 plugin
