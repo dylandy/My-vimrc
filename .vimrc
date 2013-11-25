@@ -28,6 +28,10 @@ Bundle 'Lokaltog/powerline-fonts'
 " My Bundles here:
 "github 上的 plugin
 Bundle 'othree/html5.vim'
+
+"less highlighter
+"Bundle 'groenewege/vim-less'
+au BufRead,BufNewFile *.less setfiletype css
  
 "第二種為普通的script plugin
 " vim-scripts repos
