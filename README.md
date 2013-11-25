@@ -22,7 +22,7 @@ Trying to build a nice setting of my vim editor.<br>
  4. tab 距離為 2 個空格
  5. 保留指令紀錄最多 100 條
  6. 顯示目前游標所在行線
-
+ 7. 將 .less 檔案以 css 方式上色
 
 ##Require
 ---
