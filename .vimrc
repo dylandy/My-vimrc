@@ -30,7 +30,6 @@ Bundle 'Lokaltog/powerline-fonts'
 Bundle 'othree/html5.vim'
 
 "less highlighter
-"Bundle 'groenewege/vim-less'
 au BufRead,BufNewFile *.less setfiletype css
  
 "第二種為普通的script plugin
