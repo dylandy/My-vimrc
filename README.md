@@ -42,7 +42,9 @@ Trying to build a nice setting of my vim editor.<br>
  3. Better-CSS-Syntax-for-Vim ，前端網頁工具，使 vim 可以對 CSS3 語法進行表示<br>
  4. Powerline 讓 VIM 的狀態列更漂亮的工具<br>
  5. Powerline-font 補足 Powerline 的字型檔<br>
-
+ 6. gocde  -> golang 語法自動完成<br>
+ 7. go.vim -> golang 語法自動高亮<br>
+ 8. syntastic 自動檢查語法錯誤<br>
 
 
 
