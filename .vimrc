@@ -40,9 +40,6 @@ Bundle 'scrooloose/syntastic'
 "less highlighter
 au BufRead,BufNewFile *.less setfiletype css
 
-"Support for go
-Bundle 'golangtw/go.vim'
-Bundle 'golangtw/gocode.vim'
 " vim-scripts repos
  
 filetype plugin indent on " required!
