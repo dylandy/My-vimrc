@@ -39,7 +39,9 @@ Bundle 'othree/html5.vim'
 Bundle 'scrooloose/syntastic'
 "less highlighter
 au BufRead,BufNewFile *.less setfiletype css
-
+"markdown highlighter
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 " vim-scripts repos
  
 filetype plugin indent on " required!
