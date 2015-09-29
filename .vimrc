@@ -14,10 +14,12 @@ set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 filetype on
 filetype indent on
 filetype plugin on
+"some nerdtree configuration
 autocmd FileType ruby compiler ruby
 autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 map <C-n> :NERDTreeToggle<CR>
 
