@@ -24,6 +24,7 @@ Trying to build a nice setting of my vim editor.<br>
  6. 顯示目前游標所在行線
  7. 將 .less 檔案以 css 方式上色
  8. 將 markdown 語法上色
+ 9. 增加 nerdtree 功能，將整個專案用樹狀結構展開
 
 ##Require
 ---
@@ -47,6 +48,7 @@ Trying to build a nice setting of my vim editor.<br>
  1. Powerline-font 補足 Powerline 的字型檔<br>
  1. syntastic 自動檢查語法錯誤<br>
  1. vim-markdown 自動 markdown 上色<br>
+ 1. nerdtree 自動以樹狀結構表示 project <br>
 
 
 
