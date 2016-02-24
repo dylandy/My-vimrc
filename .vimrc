@@ -11,12 +11,15 @@ set nocompatible " be iMproved
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set ft=crystal
+au BufRead,BufNewFile *.{cr,ecr} set filetype=crystal
 filetype on
 filetype indent on
 filetype plugin on
 "some nerdtree configuration
 autocmd FileType ruby compiler ruby
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -26,6 +29,7 @@ map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeWinSize = 20 
 
 "Auto check if vundle is installed. if not istall it first
 let iCanHazVundle=1
@@ -65,3 +69,4 @@ filetype plugin indent on " required!
 Bundle 'vim-ruby/vim-ruby'
 "nerd tree
 Bundle 'scrooloose/nerdtree'
+Bundle "rhysd/vim-crystal"
