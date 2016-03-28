@@ -1,4 +1,5 @@
 syntax on
+set nu
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
@@ -7,6 +8,7 @@ set autoindent
 set cursorline
 set history=100
 set expandtab
+set hlsearch
 set nocompatible " be iMproved
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
@@ -14,6 +16,7 @@ set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set ft=crystal
 au BufRead,BufNewFile *.{cr,ecr} set filetype=crystal
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -31,7 +34,7 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeWinSize = 20 
 
-"Auto check if vundle is installed. if not istall it first
+"Auto check if vundle is installed. if not install it first
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
@@ -61,12 +64,38 @@ au BufRead,BufNewFile *.less setfiletype css
 "markdown highlighter
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+"disable folding
+let g:vim_markdown_folding_disabled = 1
+
 " vim-scripts repos
  
 filetype plugin indent on " required!
 
 "ruby support for vim
 Bundle 'vim-ruby/vim-ruby'
+Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "kana/vim-textobj-user"
+set nocompatible
+if has("autocmd")
+    filetype indent plugin on
+endif
 "nerd tree
 Bundle 'scrooloose/nerdtree'
 Bundle "rhysd/vim-crystal"
+Bundle "StanAngeloff/php.vim"
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
+"autocomplete
+Bundle "Valloric/YouCompleteMe"
+"support for crystal
+Bundle "rhysd/vim-crystal"
+"setting for crystal
+:set ft=crystal
+au BufRead,BufNewFile *.{cr,ecr} set filetype=crystal
