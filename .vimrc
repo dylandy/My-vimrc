@@ -1,4 +1,5 @@
 syntax on
+syntax enable
 set nu
 set tabstop=2
 set shiftwidth=2
@@ -17,7 +18,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set ft=crystal
 au BufRead,BufNewFile *.{cr,ecr} set filetype=crystal
 
-filetype on
+filetype off  
 filetype indent on
 filetype plugin on
 "some nerdtree configuration
@@ -92,10 +93,7 @@ augroup phpSyntaxOverride
   autocmd!
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
-"autocomplete
-Bundle "Valloric/YouCompleteMe"
-"support for crystal
-Bundle "rhysd/vim-crystal"
-"setting for crystal
-:set ft=crystal
-au BufRead,BufNewFile *.{cr,ecr} set filetype=crystal
+"support for coffeescript
+Plugin 'kchmck/vim-coffee-script'
+set ft=coffee
+
